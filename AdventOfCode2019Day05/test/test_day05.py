@@ -87,14 +87,3 @@ def test_solve_part_1f():
     expected = 99
     assert expected == actual
 
-def test_solve_part_2():
-    import day05
-    raw_lines = """
-      1,1,1,4,99,5,6,0,99
-    """.split("\n")
-    trimmed_lines = map(lambda s: s.strip(), raw_lines)
-    lines = list(filter(None, trimmed_lines))
-    day05 = day05.Day05(lines)
-    actual = day05.solve_part_2()
-    expected = 0
-    assert expected == actual
